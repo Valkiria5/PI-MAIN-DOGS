@@ -1,0 +1,60 @@
+
+
+.divcard{
+    transform: scale(1.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.divcard2 {
+    width: 210px;
+    height:290px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 1px 3px  rgb(27, 27, 27), 0 1px 2px  rgb(0, 0, 0);
+    transition: all 300ms;
+}
+.divcard2 :hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgb(87, 72, 48), 0 10px 10px  rgb(87, 72, 48);
+  }
+  .imghomecard {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10%;
+    border-style:outset;
+    border-color: rgb(209,190,168);
+    border-width: 1px;
+    
+  }
+  .divcard3 {
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    padding: 30px 20px 20px 20px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent,  rgb(209,190,168));
+  }
+  .pnamecard {
+    font-size: 15px;
+    color: rgb(61,43,31);
+    margin-bottom: 4px;
+    margin: 0;
+  }
+  .pweightcard {
+    font-size: 10px;
+    color: rgb(61,43,31);
+    margin-bottom: 4px;
+    margin: 0;
+  }
+  .ptemperamentcard {
+    font-size: 9px;
+    color: rgb(61,43,31);
+    margin-bottom: 4px;
+    margin: 0;
+  }

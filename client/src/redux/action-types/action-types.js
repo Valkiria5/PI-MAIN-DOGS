@@ -1,0 +1,11 @@
+export const GET_DOGS = "GET_DOGS"; 
+export const GET_SEARCH = "GET_SEARCH";
+export const ORDER_BY = "ORDER_BY";
+export const ORDER_BY_WEIGHT = "ORDER_BY_WEIGHT";
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENT"; 
+export const RES_STATE = "RES_STATE";
+export const GET_DETAIL = "GET_DETAIL";
+export const FILTER_TEMPERAMENT = "FILTER_TEMPERAMENT"
+export const POST_FAILURE = "POST_FAILURE "
+export const POST_SUCCESS = "POST_SUCCESS"
+export const POST_REQUEST = "POST_REQUEST"

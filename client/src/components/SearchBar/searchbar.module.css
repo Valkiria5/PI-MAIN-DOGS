@@ -1,0 +1,77 @@
+.inputsearchbar {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+    margin-bottom: 1px;
+  }
+  
+  .inputsearchbar:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .inputsearchbar:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .inputsearchbar {
+    padding: 15px 110px 15px 15px;
+  }
+  
+  .inputsearchbar:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .inputsearchbar {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .inputsearchbar:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .inputsearchbar:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .inputsearchbar:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }

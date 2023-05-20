@@ -1,0 +1,156 @@
+.selectorderaz {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+    margin-bottom: 20px;
+    margin-left: 2px ;
+  }
+  
+  .selectorderaz:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .selectorderaz:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .selectorderaz {
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .selectorderaz:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .selectorderaz {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .selectorderaz:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .selectorderaz:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .selectorderaz:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }
+
+
+  .selectorderweight {
+    border: none;
+    font-family: 'Lato';
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+    margin-bottom: 20px;
+  }
+  
+  .selectorderweight:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .selectorderweight:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .selectorderweight {
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .selectorderweight:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .selectorderweight {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .selectorderweight:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .selectorderweight:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .selectorderweight:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }

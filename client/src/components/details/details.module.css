@@ -1,0 +1,132 @@
+.dogsdetail{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 60px;
+}
+.detailimage_url{
+    width: 30rem;
+    height: 25rem;
+    margin-left: 30px;
+    border-radius: 10%;
+    border-style:outset;
+    border-color: rgb(209,190,168);
+    border-width: 7px;
+}
+
+.detaildivh3{
+ text-align: center;
+ display: grid;
+}
+.divdetail{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+}
+.detalid{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.detailname{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.detailweight{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.detailheight{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.detailtemperament{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.detaillifespan{
+    color: rgb(61,43,31);
+    font-family: 'FontAwesome'
+}
+.buttonhomedetail {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+    margin-top: auto;
+    margin-left: 620px;
+  }
+  
+  .buttonhomedetail:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .buttonhomedetail:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .buttonhomedetail {
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .buttonhomedetail:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .buttonhomedetail {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .buttonhomedetail:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .buttonhomedetail:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .buttonhomedetail:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }

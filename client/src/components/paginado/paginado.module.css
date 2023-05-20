@@ -1,0 +1,79 @@
+.buttonpaginado {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline;
+    margin: 1px ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+  }
+  
+  .buttonpaginado:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .buttonpaginado:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .buttonpaginado {
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .buttonpaginado:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .buttonpaginado {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .buttonpaginado:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .buttonpaginado:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .buttonpaginado:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }
+  .ul{
+    margin-left: 200px;
+  }

@@ -1,0 +1,90 @@
+
+.optiontemperamentfilter {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline;
+    margin: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 50;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: x-small;
+   
+  }
+  
+  .optiontemperamentfilter:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .optiontemperamentfilter:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .optiontemperamentfilter {
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .optiontemperamentfilter:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .optiontemperamentfilter {
+    background: rgb(209,190,168);
+    color: #fff;
+  }
+  
+  .optiontemperamentfilter:hover {
+    background: rgb(188,152,126);
+  }
+  
+  .optiontemperamentfilter:active {
+    background: rgb(188,152,126);
+    top: 2px;
+  }
+  
+  .optiontemperamentfilter:before {
+    position: absolute;
+    height: 10%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+  }
+  .divtempnav{
+    display: flex;
+    position:inherit; 
+    margin-top: 10px;
+  }
+  .homenavbar{
+    margin-bottom: 10px;
+  }
+  .tempfilter{
+    margin-right: 30px ;
+    margin-top: 23px;
+  }
