@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getTemperaments, filterTemperament } from "../../redux/action/action";
 import style from './temperamentfilter.module.css';
 

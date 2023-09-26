@@ -1,77 +1,55 @@
+
 .inputsearchbar {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline-block;
-    margin: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-bottom: 1px;
-  }
-  
-  .inputsearchbar:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .inputsearchbar:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .inputsearchbar {
-    padding: 15px 110px 15px 15px;
-  }
-  
-  .inputsearchbar:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .inputsearchbar {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .inputsearchbar:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .inputsearchbar:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .inputsearchbar:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #3d3d3d; /* Color de texto */
+  background: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+  cursor: pointer;
+  padding: 15px 40px 15px 15px; /* Ajusta el espaciado según tus preferencias */
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400; /* Ajusta el peso de la fuente según tus preferencias */
+  outline: none;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 25px; /* Un valor adecuado para redondear los bordes */
+}
+
+.inputsearchbar::placeholder {
+  color: #7f7f7f; /* Color del texto de marcador de posición */
+}
+
+.inputsearchbar:focus {
+  background: rgba(255, 255, 255, 1); /* Fondo sin transparencia al enfocar */
+  color: #3d3d3d; /* Color de texto al enfocar */
+}
+
+/* Icono de búsqueda */
+.inputsearchbar:before {
+  content: '\f002'; /* Código del icono de búsqueda (FontAwesome) */
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  left: 20px; /* Ajusta la posición del icono según tus preferencias */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Ajusta el tamaño del icono según tus preferencias */
+}
+
+/* Estilos al pasar el cursor */
+.inputsearchbar:hover {
+  background: rgb(188, 152, 126);
+}
+
+.inputsearchbar:active {
+  background: rgb(188, 152, 126);
+  top: 2px;
+}

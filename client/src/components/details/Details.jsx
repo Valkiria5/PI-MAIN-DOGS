@@ -20,7 +20,6 @@ const Detail = () => {
  return (
      <div >
         <div>
-            <h1 className={style.dogsdetail}>Dogs Detail</h1>
             <Link to= '/home'>
                 <button onClick={resState} className= {style.buttonhomedetail}>HOME</button>
             </Link>

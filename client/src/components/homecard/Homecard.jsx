@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from './homecard.module.css';
-const HomeCard = ({id, image_url, name, weight, temperament, life_span}) => {
+const HomeCard = ({id, image_url, name, weight, temperament,weightMax,weightMin, life_span}) => {
     
     return(
         <div className={style.divcard}>
@@ -10,7 +10,7 @@ const HomeCard = ({id, image_url, name, weight, temperament, life_span}) => {
              <Link to={`/home/${id}`}>
           <img src={image_url} alt={name} className={style.imghomecard}/> 
            </Link>
-        <p className={style.pweightcard}>{weight}</p> 
+        <p className={style.pweightcard}>{weight}{weightMin} {weightMax}</p> 
         <p className={style.ptemperamentcard}>{temperament}</p>                
         <p className={style.pnamecard}>{name}</p>
          </div>  

@@ -1,90 +1,71 @@
 
 .optiontemperamentfilter {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-   
-  }
-  
-  .optiontemperamentfilter:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .optiontemperamentfilter:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .optiontemperamentfilter {
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .optiontemperamentfilter:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .optiontemperamentfilter {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .optiontemperamentfilter:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .optiontemperamentfilter:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .optiontemperamentfilter:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
-  .divtempnav{
-    display: flex;
-    position:inherit; 
-    margin-top: 10px;
-  }
-  .homenavbar{
-    margin-bottom: 10px;
-  }
-  .tempfilter{
-    margin-right: 30px ;
-    margin-top: 23px;
-  }
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #fff; /* Color de texto */
+  background: rgb(209, 190, 168); /* Color de fondo */
+  cursor: pointer;
+  padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+  margin: 10px 20px; /* Ajusta el espaciado entre el filtro y otros elementos */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400; /* Ajusta el peso de la fuente según tus preferencias */
+  outline: none;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 25px; /* Un valor adecuado para redondear los bordes */
+}
+
+.optiontemperamentfilter:hover {
+  background: rgb(188, 152, 126); /* Color de fondo al pasar el cursor */
+}
+
+.optiontemperamentfilter:active {
+  background: rgb(188, 152, 126); /* Color de fondo al hacer clic */
+  top: 2px;
+}
+
+/* Estilos para el botón desplegable */
+.selecttemperamentfilter {
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #fff; /* Color de texto */
+  background: rgb(209, 190, 168); /* Color de fondo */
+  cursor: pointer;
+  padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+  margin: 10px 20px; /* Ajusta el espaciado entre el filtro y otros elementos */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400; /* Ajusta el peso de la fuente según tus preferencias */
+  outline: none;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 25px; /* Un valor adecuado para redondear los bordes */
+}
+
+.selecttemperamentfilter:hover {
+  background: rgb(188, 152, 126); /* Color de fondo al pasar el cursor */
+}
+
+.selecttemperamentfilter:active {
+  background: rgb(188, 152, 126); /* Color de fondo al hacer clic */
+  top: 2px;
+}
+
+/* Icono de flecha hacia abajo (FontAwesome) */
+.selecttemperamentfilter::after {
+  content: '\f107'; /* Código de la flecha hacia abajo */
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  right: 20px; /* Ajusta la posición del icono según tus preferencias */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; /* Ajusta el tamaño del icono según tus preferencias */
+}

@@ -1,156 +1,55 @@
-.selectorderaz {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-bottom: 20px;
-    margin-left: 2px ;
-  }
-  
-  .selectorderaz:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .selectorderaz:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .selectorderaz {
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .selectorderaz:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .selectorderaz {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .selectorderaz:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .selectorderaz:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .selectorderaz:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
 
+.selectorderaz,
+.selectorderweight {
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+  color: #fff; /* Color de texto */
+  background: rgb(209, 190, 168); /* Color de fondo */
+  cursor: pointer;
+  padding: 10px 20px; /* Ajusta el espaciado según tus preferencias */
+  margin: 10px 20px; /* Ajusta el espaciado entre los selectores y otros elementos */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400; /* Ajusta el peso de la fuente según tus preferencias */
+  outline: none;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 25px; /* Un valor adecuado para redondear los bordes */
+}
 
-  .selectorderweight {
-    border: none;
-    font-family: 'Lato';
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-bottom: 20px;
-  }
-  
-  .selectorderweight:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .selectorderweight:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .selectorderweight {
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .selectorderweight:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .selectorderweight {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .selectorderweight:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .selectorderweight:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .selectorderweight:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
+.selectorderaz:hover,
+.selectorderweight:hover {
+  background: rgb(188, 152, 126); /* Color de fondo al pasar el cursor */
+}
+
+.selectorderaz:active,
+.selectorderweight:active {
+  background: rgb(188, 152, 126); /* Color de fondo al hacer clic */
+  top: 2px;
+}
+
+/* Icono de flecha hacia abajo (FontAwesome) */
+.selectorderaz::after,
+.selectorderweight::after {
+  content: '\f107'; /* Código de la flecha hacia abajo */
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  right: 20px; /* Ajusta la posición del icono según tus preferencias */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px; /* Ajusta el tamaño del icono según tus preferencias */
+}
+
+/* Estilo para el botón de orden seleccionado */
+.selectorderaz.selected,
+.selectorderweight.selected {
+  background: rgb(188, 152, 126); /* Color de fondo del botón seleccionado */
+  color: #fff; /* Color de texto del botón seleccionado */
+  cursor: default; /* Deshabilita el cursor en el botón seleccionado */
+}

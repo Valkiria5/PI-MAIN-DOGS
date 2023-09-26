@@ -1,197 +1,75 @@
-.divhome{
-    display: flex;
-    margin-left: 510px;
-    font-family: 'FontAwesome';
-    font-size: 30px;
-    color: rgb(61,43,31);
+.divhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Ajusta la altura según tus preferencias */
 }
 
-.buttonhome {
+.divhome h1 {
+  font-family: 'FontAwesome';
+  font-size: 48px; /* Ajusta el tamaño del título */
+  color: rgb(61, 43, 31);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para los botones */
+.buttonhome,
+.buttontoform {
   border: none;
-  font-family: 'Lato';
-  font-size: inherit;
-  color: inherit;
-  background: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño del texto de los botones */
+  color: #fff;
+  background-color: rgb(209, 190, 168);
+  border-radius: 50px; /* Un valor adecuado para redondear los bordes */
+  padding: 15px 30px; /* Ajusta el espacio interno del botón */
+  margin: 10px 20px; /* Espacio entre botones */
   cursor: pointer;
-  padding: 25px 80px;
-  display: inline;
-  margin: 10px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 50;
   outline: none;
   position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: x-small;
-  margin-bottom: 83px;
-  margin-top: auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.buttonhome:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+.buttonhome:hover,
+.buttontoform:hover {
+  background-color: rgb(188, 152, 126);
+  transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
 }
 
-/* Pseudo elements for icons */
-.buttonhome:before {
+.buttonhome:active,
+.buttontoform:active {
+  background-color: rgb(188, 152, 126);
+  top: 1px;
+}
+
+/* Estilos para el ícono dentro de los botones */
+.buttonhome:before,
+.buttontoform:before {
   font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
+  content: '\f021'; /* Cambia este código por el icono deseado */
+  font-size: 20px;
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
 }
 
-
-/* Icon separator */
-.buttonhome {
-  padding: 10px 10px 10px 10px;
-}
-
-.buttonhome:before {
-  background: rgba(0,0,0,0.15);
-}
-
-/* Button 1 */
-.buttonhome {
-  background: rgb(209,190,168);
-  color: #fff;
-}
-
-.buttonhome:hover {
-  background: rgb(188,152,126);
-}
-
-.buttonhome:active {
-  background: rgb(188,152,126);
-  top: 2px;
-}
-
-.buttonhome:before {
-  position: absolute;
-  height: 10%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 40px;
-}
-.divtempnav{
+/* Estilos para la sección de filtros y navegación */
+.divtempnav {
   display: flex;
-  position:inherit; 
-  margin-top: 10px;
-}
-.homenavbar{
-  margin-bottom: 10px;
-}
-.tempfilter{
-  margin-right: 30px ;
-  margin-top: 23px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* Ajusta la separación desde arriba */
 }
 
-  .buttontoform {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline-block;
-    margin: 15px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-  }
-  
-  .buttontoform:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .buttontoform:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .buttontoform {
-    padding: 10px 16px 10px 20px;
-  }
-  
-  .buttontoform:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .buttontoform {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .buttontoform:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .buttontoform:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .buttontoform:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
-  .divtempnav{
-    display: flex;
-    position:inherit; 
-    margin-top: 10px;
-  }
-  .homenavbar{
-    margin-bottom: 10px;
-  }
-  .tempfilter{
-    margin-right: 30px ;
-    margin-top: 8px;
-  }
-  .cardenhome {   
+.tempfilter {
+  margin-right: 20px; /* Ajusta el margen derecho */
+  margin-top: 0; /* Elimina el margen superior */
+}
+
+/* Estilos para la sección de tarjetas */
+.cardenhome {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7rem; 
-  }
-.paginadohome{
-  margin-top: 50px;
+  gap: 2rem; /* Ajusta el espacio entre las tarjetas */
 }
+
+/* Estilos para la sección de paginación */

@@ -53,26 +53,19 @@
     font-family: 'FontAwesome'
 }
 .buttonhomedetail {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-top: auto;
-    margin-left: 620px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño del texto de los botones */
+  color: #fff;
+  background-color: rgb(209, 190, 168);
+  border-radius: 50px; /* Un valor adecuado para redondear los bordes */
+  padding: 15px 30px; /* Ajusta el espacio interno del botón */
+  margin: 10px 20px; /* Espacio entre botones */
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  margin-left: 650px;
   }
   
   .buttonhomedetail:after {

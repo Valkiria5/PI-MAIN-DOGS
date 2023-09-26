@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'; 
 import React from 'react';
 import style from './landingpage.module.css'
-
+import ladrido from '../../assets/ladrido.mp3'
 export default function LandingPage() {
+    function playClickSound() {
+        const audio = new Audio(ladrido);
+        audio.play();
+      }
     return (
         <div>
         <div className={style.divlanding}>
@@ -10,7 +14,7 @@ export default function LandingPage() {
          </div> 
          <div className={style.divbotonlanding}>    
            <Link to={'/home'}>
-                    <button className={style.buttonLanding}>SUBMIT</button> 
+                    <button className={style.buttonLanding} onClick={playClickSound}>SUBMIT</button> 
            </Link>
          </div> 
          <div className={style.divimglanding}>

@@ -219,61 +219,55 @@ function validate(input) {
   let errors = {};
 
   if (!input.name) {
-    errors.name = "Name is required";
+    errors.name = "El nombre es necesario";
   } else if (!/^[A-Za-zÁÉÍÓÚáéíóúñÑ ]+$/.test(input.name)) {
-    errors.name = "Name can only contain leters";
+    errors.name = "El nombre solo puede contener letras";
   }
 
   if (!input.heightMin) {
-    errors.heightMin = "Minimun height is required";
+    errors.heightMin = "La altura minima es necesaria";
   } else if (!/^([0-9])*$/.test(input.heightMin)) {
-    errors.heightMin = "Minimun height should be a number";
+    errors.heightMin = "La altura minima tiene que ser un numero";
   } else if (input.heightMin < 1 || input.heightMin > 50) {
-    errors.heightMin = "Minimun height should be between 0 and 50 Cms";
+    errors.heightMin = "La altura minima tiene que ser entre 0 y 50 Cm";
   }
 
   if (!input.heightMax) {
-    errors.heightMax = "Maximun height is required";
+    errors.heightMax = "La altura maxima es requerida";
   } else if (!/^([0-9])*$/.test(input.heightMax)) {
-    errors.heightMax = "Maximun height should be a number";
+    errors.heightMax = "La altura maxima tiene que ser un numero";
   } else if (input.heightMax > 100) {
-    errors.heightMax = "Maximum height can't be more than 100 Cms";
+    errors.heightMax = "La altura maxima no puede ser mayor a 100 cm";
   } else if (input.heightMax === input.heightMin) {
-    errors.heightMax = "Maximun height can't be equal than minimun height";
+    errors.heightMax = "La altura maxima no puede ser igual a la altura minima";
   }
 
   if (!input.weightMin) {
-    errors.weightMin = "Minimun weight is required";
+    errors.weightMin = "El peso minimo es requerido";
   } else if (!/^([0-9])*$/.test(input.weightMin)) {
-    errors.weightMin = "Minimun weight should be a number";
+    errors.weightMin = "El peso minimo debe ser un numero";
   } else if (input.weightMin < 1 || input.weightMin > 50) {
-    errors.weightMin = "Minimun weight should be between 0 and 50 Kgs";
+    errors.weightMin = "El peso minimo debe estar entre 0 y 50 Kgs";
   }
 
   if (!input.weightMax) {
-    errors.weightMax = "Maximun weight is required";
+    errors.weightMax = "El peso maximo es requerido";
   } else if (!/^([0-9])*$/.test(input.weightMax)) {
-    errors.weightMax = "Maximun weight should be a number";
+    errors.weightMax = "El peso maximo debe ser un numero";
   } else if (input.weightMax > 100) {
-    errors.weightMax = "Maximum weight can't be more than 100 Kgs";
+    errors.weightMax = "El peso maximo no debe ser mayor a 100 Kgs";
   } else if (input.weightMax === input.weightMin) {
-    errors.weightMax = "Maximun weight can't be equal than minimun weight";
+    errors.weightMax = "El peso maximo no debe ser igual al peso minimo";
   }
 
   if (!input.life_span) {
-    errors.life_span = "Life span is required";
+    errors.life_span = "El tiempo de vida es necesario";
   } else if (!/^([0-9])*$/.test(input.life_span)) {
-    errors.life_span = "Dog's life span should be a number";
+    errors.life_span = "El tiempo de vida debe ser un numero";
   }
 
-  // if (!input.image_url) {
-  //   input.image_url = "https://i.ytimg.com/vi/0oBx7Jg4m-o/maxresdefault.jpg";
-  // } else if (!/^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/.test(input.image_url)) {
-  //   errors.image_url = "The image_url should have a valid url";
-  // }
-
   if (!input.temperament) {
-    errors.temperament = "Temperemnts are required";
+    errors.temperament = "Los temperamentos son requeridos";
   }
 
   return errors;

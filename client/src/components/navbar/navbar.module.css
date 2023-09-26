@@ -1,0 +1,36 @@
+.divnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(119, 91, 72); /* Color de fondo de la barra de navegación */
+    padding: 10px 20px; /* Ajusta el espaciado interno de la barra */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.divnavbar a {
+    text-decoration: none; /* Quita la decoración de los enlaces */
+    color: #fff; /* Color de texto de los enlaces */
+    margin-right: 20px; /* Espacio entre enlaces */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición de color suave */
+    font-family: 'FontAwesome'; /* Usa la fuente FontAwesome para íconos */
+}
+
+.divnavbar a:hover {
+    color: rgb(209, 190, 168); /* Cambia el color al pasar el cursor */
+}
+.buttonhome,
+.buttontoform {
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; /* Ajusta el tamaño del texto de los botones */
+    color: #fff;
+    background-color: rgb(209, 190, 168);
+    border-radius: 50px; /* Un valor adecuado para redondear los bordes */
+    padding: 15px 30px; /* Ajusta el espacio interno del botón */
+    margin: 10px 20px; /* Espacio entre botones */
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }

@@ -1,183 +1,82 @@
-.divformh1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-.h1form{
-    color: rgb(61,43,31);
-    font-family: 'FontAwesome'; 
-}
-.divform{
-    text-align: center;
-    margin-top: 30px;
-}
-.labeldogsname{
-    color: rgb(61,43,31);
-    font-family: 'FontAwesome';
-    font-size: 23px;
-}
-.labeldogsnamediv{
-    margin-bottom: 20px;
-}
-.inputdogsname {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-top: auto;
-  }
-  
-  .inputdogsname:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .inputdogsname:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .inputdogsname {
-    padding: 10px 30px 10px 30px;
-  }
-  
-  .inputdogsname:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .inputdogsname {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .inputdogsname:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .inputdogsname:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .inputdogsname:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
-  .errorsdogsname{
-    color: Sienna;
-  }
-  .labelminheightdiv{
-    margin-bottom: 20px;
+/* Estilos generales del formulario */
+.divform {
+  text-align: center;
+  margin-top: 30px;
 }
 
+/* Estilos para el título del formulario */
+.h1form {
+  color: rgb(61, 43, 31);
+  font-family: 'FontAwesome';
+  margin-left: 460px;
+}
+
+/* Estilos para los campos de entrada */
+.inputdogsname,
 .temperamentform {
-    border: none;
-    font-family: 'Lato';
-    font-size: inherit;
-    color: inherit;
-    background: none;
-    cursor: pointer;
-    padding: 25px 80px;
-    display: inline;
-    margin: 10px 30px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 50;
-    outline: none;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    font-size: x-small;
-    margin-bottom: 20px;
-    margin-top: auto;
-  }
-  
-  .temperamentform:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  
-  /* Pseudo elements for icons */
-  .temperamentform:before {
-    font-family: 'FontAwesome';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  /* Icon separator */
-  .temperamentform {
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .temperamentform:before {
-    background: rgba(0,0,0,0.15);
-  }
-  
-  /* Button 1 */
-  .temperamentform {
-    background: rgb(209,190,168);
-    color: #fff;
-  }
-  
-  .temperamentform:hover {
-    background: rgb(188,152,126);
-  }
-  
-  .temperamentform:active {
-    background: rgb(188,152,126);
-    top: 2px;
-  }
-  
-  .temperamentform:before {
-    position: absolute;
-    height: 10%;
-    left: 0;
-    top: 0;
-    line-height: 3;
-    font-size: 140%;
-    width: 40px;
-  }
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+  border-radius: 20px; /* Agrega bordes redondeados */
+  margin: 10px 0; /* Ajusta el margen vertical según tus necesidades */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 50;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: x-small;
+}
+
+/* Estilos para los iconos dentro de los campos de entrada */
+.inputdogsname:before,
+.temperamentform:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  background: rgba(0, 0, 0, 0.15);
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 40px;
+}
+
+/* Estilos para los botones */
+.inputdogsname,
+.temperamentform {
+  background: rgb(209, 190, 168);
+  color: #fff;
+}
+
+.inputdogsname:hover,
+.temperamentform:hover {
+  background: rgb(188, 152, 126);
+}
+
+.inputdogsname:active,
+.temperamentform:active {
+  background: rgb(188, 152, 126);
+  top: 2px;
+}
+
+/* Estilos para etiquetas y otros elementos */
+.labeldogsname,
+.labeldogsnamediv,
+.labelminheightdiv {
+  color: rgb(61, 43, 31);
+  font-family: 'FontAwesome';
+  font-size: 23px;
+}

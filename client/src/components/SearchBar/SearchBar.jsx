@@ -3,8 +3,8 @@ import { useDispatch } from "react-redux";
 import { getBreedsName,getDogs } from "../../redux/action/action";
 import style from './searchbar.module.css';
 
- const SearchBar = () => {
-   const [name, setName] = useState(''); 
+ const SearchBar = ({setCurrentPage}) => {
+   const [name, setName] = useState(''); //estado local
    const dispatch = useDispatch();
    
    useEffect(() => {
@@ -13,7 +13,8 @@ import style from './searchbar.module.css';
 
 
    const handleChange = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
+    setCurrentPage(1)// se cancela la acción que normalmente ocurriría. evita que se recargue
     setName(event.target.value)
 
     if(name.length>1){
